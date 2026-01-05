@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "e9d0b921-555a-4584-abaa-9312a6317e79",
+    "userId": "770be925-495d-411f-9518-29710f36588b",
+    "country": "United States",
+    "visaType": "H-1B",
+    "score": 68,
+    "rawScore": 100,
+    "summary": "Your application demonstrates excellent document completeness, with all listed required items successfully provided. However, the specific visa type, details about your employer, job role, and personal achievements (Context) are undefined, which are critical for a full evaluation. This score primarily reflects your strong submission of basic prerequisites, but actual approval depends heavily on the content and alignment of these documents with the chosen visa category's requirements. Focus on ensuring your resume, degree certificate, and employment contract clearly articulate your qualifications and the specialty nature of the position. Proactively prepare for potential Requests for Evidence by gathering additional supporting evidence that strengthens your professional profile and the job offer's validity.",
+    "missingDocuments": [],
+    "createdAt": "2026-01-02T15:30:23.072Z",
+    "updatedAt": "2026-01-02T15:30:23.072Z"
+  }
+]
