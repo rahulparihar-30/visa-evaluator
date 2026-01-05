@@ -1,13 +1,31 @@
 import mongoose from "mongoose";
 
-const connectToMongo = async () => {
-  try {
-    const conn = await mongoose.connect(process.env.MONGO_URL, { dbName: 'visa_records' });
-    console.log("MONGO connection successfull.");
-  } catch (error) {
-    console.error("Error connecting to mongoDB\n So, data will be stored locally.",);
-  }
-};
+let cached = global.mongoose;
 
+if (!cached) {
+  cached = global.mongoose = { conn: null, promise: null };
+}
+
+const connectToMongo = async () => {
+  if (cached.conn) {
+    return cached.conn;
+  }
+
+  if (!cached.promise) {
+    cached.promise = mongoose.connect(process.env.MONGO_URL, {
+      dbName: "visa_records",
+      bufferCommands: false,
+    });
+  }
+
+  try {
+    cached.conn = await cached.promise;
+  } catch (err) {
+    cached.promise = null;
+    throw err;
+  }
+
+  return cached.conn;
+};
 
 export default connectToMongo;
