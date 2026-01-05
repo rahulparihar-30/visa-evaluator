@@ -22,7 +22,6 @@ app.use(
   })
 );
 
-app.options("*", cors());
 
 app.get("/", (req, res) => {
   res.json({
