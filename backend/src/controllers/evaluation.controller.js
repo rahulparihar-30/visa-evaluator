@@ -100,7 +100,11 @@ export const submitForEvaluation = async (req, res) => {
     summary: evaluation.summary,
   };
 
-  const emailResponse = await notifyUser(receipentDetail);
+  try{
+    await notifyUser(receipentDetail);
+  }catch(err){
+    console.error("Email notification failed:", err.message);
+  }
 
   res.json({
     id: user._id,
