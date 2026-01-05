@@ -75,3 +75,8 @@ export const saveEvaluationLocally = (evaluation) => {
 
   return newEvaluation;
 };
+
+export const getEvaluationLocally = (userId) => {
+  const evaluations = readJSON(EVALUATION_FILE);
+  return evaluations.find((evaluation) => evaluation.userId === userId);
+};
