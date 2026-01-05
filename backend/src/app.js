@@ -7,8 +7,22 @@ import connectToMongo from "./config/db.js";
 import visaRouter from "./routes/visa.routes.js";
 
 const app = express();
-app.use(cors());
 const PORT = process.env.PORT || 4000;
+
+app.use(
+  cors({
+    origin: [
+      "https://visa-evaluator.pages.dev",
+      "http://localhost:5173",
+      "http://localhost:3000"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
+  })
+);
+
+app.options("*", cors());
 
 app.get("/", (req, res) => {
   res.json({
