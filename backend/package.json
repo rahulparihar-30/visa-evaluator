@@ -1,0 +1,36 @@
+{
+  "name": "visa-evaluator-backend",
+  "version": "1.0.0",
+  "description": "A tool that evalutes the visas.",
+  "keywords": [
+    "nodejs",
+    "express",
+    "ai"
+  ],
+  "homepage": "https://github.com/rahulparihar-30/visa-evaluator#readme",
+  "bugs": {
+    "url": "https://github.com/rahulparihar-30/visa-evaluator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahulparihar-30/visa-evaluator.git"
+  },
+  "license": "ISC",
+  "author": "Rahul Parihar",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@google/genai": "^1.34.0",
+    "cors": "^2.8.5",
+    "dot-env": "^0.0.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "mongoose": "^9.1.1",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.12",
+    "uuid": "^13.0.0"
+  }
+}

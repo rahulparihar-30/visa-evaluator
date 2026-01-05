@@ -1,0 +1,131 @@
+{
+  "United States": {
+    "countryCode": "US",
+    "visas": {
+      "O-1A": {
+        "description": "Individuals with extraordinary ability in sciences, education, business, or athletics",
+        "requiredDocuments": [
+          "resume",
+          "portfolio",
+          "recommendation_letters",
+          "employment_contract",
+          "passport"
+        ]
+      },
+      "O-1B": {
+        "description": "Individuals with extraordinary ability in arts or extraordinary achievement in motion picture or television",
+        "requiredDocuments": [
+          "resume",
+          "portfolio",
+          "media_coverage",
+          "employment_contract",
+          "passport"
+        ]
+      },
+      "H-1B": {
+        "description": "Specialty occupation workers",
+        "requiredDocuments": [
+          "resume",
+          "degree_certificate",
+          "employment_contract",
+          "passport"
+        ]
+      }
+    }
+  },
+
+  "Ireland": {
+    "countryCode": "IE",
+    "visas": {
+      "Critical Skills Employment Permit": {
+        "description": "Highly skilled workers in critical occupations",
+        "requiredDocuments": [
+          "resume",
+          "degree_certificate",
+          "job_offer",
+          "employment_contract",
+          "passport"
+        ]
+      }
+    }
+  },
+
+  "Poland": {
+    "countryCode": "PL",
+    "visas": {
+      "Work Permit Type C": {
+        "description": "Foreign nationals working for a Polish employer",
+        "requiredDocuments": [
+          "resume",
+          "employment_contract",
+          "work_assignment_letter",
+          "passport"
+        ]
+      }
+    }
+  },
+
+  "France": {
+    "countryCode": "FR",
+    "visas": {
+      "Talent Passport": {
+        "description": "Highly skilled professionals, researchers, artists",
+        "requiredDocuments": [
+          "resume",
+          "portfolio",
+          "employment_contract",
+          "passport"
+        ]
+      },
+      "Salarie en Mission": {
+        "description": "Employees assigned to France by their employer",
+        "requiredDocuments": [
+          "employment_contract",
+          "assignment_letter",
+          "company_registration",
+          "passport"
+        ]
+      }
+    }
+  },
+
+  "Netherlands": {
+    "countryCode": "NL",
+    "visas": {
+      "Knowledge Migrant Permit": {
+        "description": "Highly skilled migrants with recognized employers",
+        "requiredDocuments": [
+          "resume",
+          "employment_contract",
+          "salary_statement",
+          "passport"
+        ]
+      }
+    }
+  },
+
+  "Germany": {
+    "countryCode": "DE",
+    "visas": {
+      "EU Blue Card": {
+        "description": "Highly qualified workers with a recognized degree",
+        "requiredDocuments": [
+          "resume",
+          "degree_certificate",
+          "employment_contract",
+          "salary_statement",
+          "passport"
+        ]
+      },
+      "ICT Permit": {
+        "description": "Intra-corporate transfer employees",
+        "requiredDocuments": [
+          "employment_contract",
+          "assignment_letter",
+          "company_letter",
+          "passport"
+        ]
+      }
+    }
+  }
+}

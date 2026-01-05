@@ -1,0 +1,12 @@
+[
+  {
+    "country": "United States",
+    "visaType": "H-1B",
+    "rawScore": 100,
+    "score": 55,
+    "missingDocuments": [],
+    "summary": "Your application has all required documents uploaded, which is an excellent start. However, the visa type is undefined, making it impossible to accurately assess the likelihood of approval. Each U.S. visa category has specific eligibility criteria that your submitted documents (resume, degree, employment contract) must meet. To provide a precise evaluation, please specify the exact U.S. visa type you are applying for. Additionally, providing context such as specific job duties, achievements, or company details would significantly strengthen the assessment.",
+    "_id": "1767365923063",
+    "savedAt": "2026-01-02T14:58:43.065Z"
+  }
+]
