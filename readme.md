@@ -28,8 +28,8 @@ A full-stack application that evaluates visa eligibility for multiple countries 
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd visa
+git clone https://github.com/rahulparihar-30/visa-evaluator.git
+cd visa-evaluator
 ```
 
 ### 2. Backend Setup
@@ -80,7 +80,7 @@ The frontend typically runs on http://localhost:5173.
 ## 📂 Project Structure
 
 ```bash
-visa/
+visa-evaluator/
 ├── backend/
 │   ├── DB/                 # Local JSON storage (auto-created)
 │   ├── src/
