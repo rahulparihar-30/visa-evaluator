@@ -1,6 +1,5 @@
 import "dotenv/config";
 import cors from "cors";
-import serverless from "serverless-http";
 
 import express from "express";
 import EvaluationRouter from "./routes/evaluation.routes.js";
@@ -10,7 +9,6 @@ import visaRouter from "./routes/visa.routes.js";
 const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 4000;
-await connectToMongo();
 
 app.get("/", (req, res) => {
   res.json({
@@ -20,5 +18,9 @@ app.get("/", (req, res) => {
 app.use("/visa", visaRouter);
 app.use("/visa", EvaluationRouter);
 
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 
-export const handler = serverless(app);
+connectToMongo().then(() => { console.log("MongoDB connected") });
+
